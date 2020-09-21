@@ -25,6 +25,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
+	<script data-ad-client="ca-pub-8623090045109725" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
