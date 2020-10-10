@@ -14,10 +14,10 @@ DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/MyDB");
 Class.forName("com.mysql.cj.jdbc.Driver"); 
 Connection con = ds.getConnection();
 Statement st=con.createStatement();
-registeredIP=request.getRemoteAddr()
+String registeredIP=request.getRemoteAddr();
+System.out.println(registeredIP);
 	
-	
-	int i = st.executeUpdate("insert into user(first_name, last_name, email, username, password, regdate) values ('" + firstName + "','" + lastName + "','" + email + "','" + userName + "','" + password + "', CURDATE(),'"+ registeredIP + '")");
+	int i = st.executeUpdate("insert into user(first_name, last_name, email, username, password, regdate, registeredIP) values ('" + firstName + "','" + lastName + "','" + email + "','" + userName + "','" + password + "', CURDATE(),'"+ registeredIP + "')");
 	if (i > 0) { 
 				
 				response.sendRedirect("/"); 
