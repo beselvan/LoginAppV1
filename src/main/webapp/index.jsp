@@ -70,7 +70,7 @@ s0.parentNode.insertBefore(s1,s0);
 							<input type="submit" value="" />Login
 						</button>
 					</div>
-						<a class="txt1" href="register.jsp">
+							<a class="txt1" href="register.jsp" style=" padding-left: 100px; padding-bottom: 0px; padding-top: 20px;">
 							Create New Account
 						</a>
 
