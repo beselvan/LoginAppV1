@@ -52,6 +52,8 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cl
 EOF
 
 yum install -y kubeadm kubelet kubectl
+systemctl start kubelet
+systemctl enable kubelet
 
 
 #------------------------------------------------------------------------------------------
