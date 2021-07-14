@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: dbserver
+  name: dbserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dbserver
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: dbserver
+    spec:
+      containers:
+      - image: tamileng/login_mysql
+        name: login-mysql-56kt5
+        resources: {}
+status: {}
