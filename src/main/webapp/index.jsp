@@ -79,8 +79,17 @@ s0.parentNode.insertBefore(s1,s0);
 
 					<div class="text-center w-full p-t-25 p-b-50" style="  padding-bottom: 00px;">
 						<a href="#" class="txt1">
-							Forgot Username / Password?
-						</a>
+							Forgot Username / Password?						</a>
+							<p style="padding-right: -200"><font color="white"><br><br><br><br>
+							<%String ip = "";
+							InetAddress inetAddress = InetAddress.getLocalHost();
+							ip = inetAddress.getHostAddress();
+							out.println("Server Host Name :: "+inetAddress.getHostName());%><br>
+							<%out.println("Server IP Address :: "+ip);%></br>
+							<%out.print( "Client IP Address :: " + request.getRemoteAddr() ); %>
+							</font></p>
+
+
 					</div>
 
 				</form>
